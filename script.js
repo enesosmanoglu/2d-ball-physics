@@ -9,7 +9,7 @@ function resizeCanvas() {
     canvas.height = innerHeight;
 }
 
-onload = ()=>{
+onload = () => {
     resizeCanvas();
     start({ canvas, ctx });
     animate();
