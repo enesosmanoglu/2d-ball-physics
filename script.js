@@ -26,7 +26,7 @@ function animate(time = 0) {
     update({ canvas, ctx, time, dt });
     draw({ canvas, ctx, time, dt });
 
-    if (frameCounter % FPS == 1)
+    if (frameCounter % FPS == FPS - 1)
         FPS = Math.round(1 / dt);
     ctx.textAlign = "right"
     ctx.textBaseline = "top";
